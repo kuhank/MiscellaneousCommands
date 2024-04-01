@@ -1,0 +1,22 @@
+Microsoft Windows [Version 10.0.19045.4170]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\GIT>git clone https://github.com/kuhank/PLSQLQueries.git
+Cloning into 'PLSQLQueries'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), 12.67 KiB | 64.00 KiB/s, done.
+
+D:\GIT>git clone https://github.com/kuhank/PythonML.git
+Cloning into 'PythonML'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (5/5), 13.97 KiB | 6.99 MiB/s, done.
+
+D:\GIT>git config --global user.name kuhank
+
+D:\GIT>git config --global user.email "kuhankailash92@gmail.com"
