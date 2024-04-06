@@ -1,0 +1,177 @@
+Microsoft Windows [Version 10.0.22631.3296]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Projects\1_Git>git init
+Initialized empty Git repository in C:/Projects/1_Git/.git/
+
+C:\Projects\1_Git>git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+C:\Projects\1_Git>git clone https://github.com/kuhank/PythonML.git
+Cloning into 'PythonML'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (5/5), 13.97 KiB | 6.99 MiB/s, done.
+
+C:\Projects\1_Git>git config --global user.name "kuhank"
+
+C:\Projects\1_Git>git config --global user.email "kuhankailash92@gmail.com"
+
+C:\Projects\1_Git>cd PythonML
+
+C:\Projects\1_Git\PythonML>git add ./RNN.py
+
+C:\Projects\1_Git\PythonML>git commit -m "Feat: added Sample RNN code"
+[main 8e9c6c3] Feat: added Sample RNN code
+ 1 file changed, 35 insertions(+)
+ create mode 100644 RNN.py
+
+C:\Projects\1_Git\PythonML>git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 731 bytes | 731.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/kuhank/PythonML.git
+   956ef30..8e9c6c3  main -> main
+
+C:\Projects\1_Git\PythonML>git pull
+Already up to date.
+
+C:\Projects\1_Git\PythonML>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Projects\1_Git\PythonML>git diff
+
+C:\Projects\1_Git\PythonML>git push
+To https://github.com/kuhank/PythonML.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/kuhank/PythonML.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Projects\1_Git\PythonML>git diff
+
+C:\Projects\1_Git\PythonML>git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 927 bytes | 154.00 KiB/s, done.
+From https://github.com/kuhank/PythonML
+   8e9c6c3..d92ba8b  main       -> origin/main
+Updating 8e9c6c3..d92ba8b
+Fast-forward
+ RNN.py | 1 -
+ 1 file changed, 1 deletion(-)
+
+C:\Projects\1_Git\PythonML>git push
+Everything up-to-date
+
+C:\Projects\1_Git\PythonML>git branch
+* main
+
+C:\Projects\1_Git\PythonML>git checkout -b neuralnetwork
+Switched to a new branch 'neuralnetwork'
+
+C:\Projects\1_Git\PythonML>git branch
+  main
+* neuralnetwork
+
+C:\Projects\1_Git\PythonML>git pull
+From https://github.com/kuhank/PythonML
+ * [new branch]      NeuralNetwork -> origin/NeuralNetwork
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> neuralnetwork
+
+
+C:\Projects\1_Git\PythonML>git branch
+  main
+* neuralnetwork
+
+C:\Projects\1_Git\PythonML>git add NeuralNetworkSamplecode.py
+
+C:\Projects\1_Git\PythonML>git commit -m "Feat: sample code"
+[neuralnetwork 529ea8e] Feat: sample code
+ 1 file changed, 74 insertions(+)
+ create mode 100644 NeuralNetworkSamplecode.py
+
+C:\Projects\1_Git\PythonML>git diff
+
+C:\Projects\1_Git\PythonML>git push -u origin neuralnetwork
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.03 KiB | 1.03 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'neuralnetwork' on GitHub by visiting:
+remote:      https://github.com/kuhank/PythonML/pull/new/neuralnetwork
+remote:
+To https://github.com/kuhank/PythonML.git
+ * [new branch]      neuralnetwork -> neuralnetwork
+branch 'neuralnetwork' set up to track 'origin/neuralnetwork'.
+
+C:\Projects\1_Git\PythonML>git branch
+  main
+* neuralnetwork
+
+C:\Projects\1_Git\PythonML>git pull
+Already up to date.
+
+C:\Projects\1_Git\PythonML>git add NeuralNetworkSamplecode.py
+
+C:\Projects\1_Git\PythonML>git commit -m "Feat: added Sample NeuralNetwork code"
+On branch neuralnetwork
+Your branch is ahead of 'origin/neuralnetwork' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Projects\1_Git\PythonML>git push -u origin neuralnetwork
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.03 KiB | 1.03 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/kuhank/PythonML.git
+   d92ba8b..529ea8e  neuralnetwork -> neuralnetwork
+branch 'neuralnetwork' set up to track 'origin/neuralnetwork'.
+
+C:\Projects\1_Git\PythonML>git stash pop
+No stash entries found.
+
+C:\Projects\1_Git\PythonML>git branch -a
+  main
+* neuralnetwork
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/origin/neuralnetwork
+
+C:\Projects\1_Git\PythonML>
