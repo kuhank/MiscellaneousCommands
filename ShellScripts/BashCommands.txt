@@ -1,0 +1,25 @@
+Theory:
+
+Shell:
+
+Command Prompt (cmd) or PowerShell
+
+supports Bash via the Windows Subsystem for Linux (WSL)
+
+A shell is a program that provides a command-line interface (CLI) for users to interact with an operating system. It acts as a bridge between the user and the operating system's kernel, allowing the user to execute commands, run programs, and manage files.
+
+
+Key Features of a Shell:
+
+Command Execution: Interpret and execute user commands (e.g., ls, cd, echo).
+Scripting: Write and execute scripts for automating tasks.
+Interaction: Act as an interactive interface between the user and the OS.
+
+Shells in Linux:
+Bash (Bourne Again Shell)
+sh (Bourne Shell)
+csh/ksh (C and Korn Shells)
+
+Shell in Windows:
+Command Prompt (cmd)
+PowerShell
